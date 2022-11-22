@@ -36,7 +36,6 @@ function addManager(){
     const {name, id, email, officeNumber} = managerInfo;
     const manager = new Manager(name, id, email, officeNumber);
     teamBuild.push(manager);
-    console.log(manager);
 })
 };
 
@@ -72,7 +71,7 @@ function addEmployee(){
         {
             type: "input",
             name: "github",
-            message: "What is the engineers github?",
+            message: "What is the engineers github username?",
             when: (input) => input.role === "Engineer"
         },
         {
@@ -89,7 +88,7 @@ function addEmployee(){
         if (role === "Intern") {
             employee = new Intern(name, id, email, school);
         } else if (role === "Engineer") {
-            employee = new Engineer(name, id, email, gitub);
+            employee = new Engineer(name, id, email, github);
         }
         teamBuild.push(employee);
 

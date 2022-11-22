@@ -8,7 +8,7 @@ describe("Intern", () => {
             const email = "timmy@mail.com";
             const school = "UCONN";
 
-            const result = new Intern(id, name, email, school).getName();
+            const result = new Intern(name, id, email, school).getName();
 
             expect(result).toEqual(name);
         })
@@ -20,7 +20,7 @@ describe("Intern", () => {
             const email = "timmy@mail.com";
             const school = "UCONN";
 
-            const result = new Intern(id, name, email, school).getId();
+            const result = new Intern(name, id, email, school).getId();
 
             expect(result).toEqual(id);
         })
@@ -32,7 +32,7 @@ describe("Intern", () => {
             const email = "timmy@mail.com";
             const school = "UCONN";
 
-            const result = new Intern(id, name, email, school).getEmail();
+            const result = new Intern(name, id, email, school).getEmail();
 
             expect(result).toEqual(email);
         })
@@ -44,7 +44,7 @@ describe("Intern", () => {
             const email = "timmy@mail.com";
             const school = "UCONN";
 
-            const result = new Intern(id, name, email, school).getSchool();
+            const result = new Intern(name, id, email, school).getSchool();
 
             expect(result).toEqual(school);
         })
@@ -57,7 +57,7 @@ describe("Intern", () => {
             const school = "UCONN";
             const role = "Intern";
 
-            const result = new Intern(id, name, email, school).getRole();
+            const result = new Intern(name, id, email, school).getRole();
 
             expect(result).toEqual(role);
         })

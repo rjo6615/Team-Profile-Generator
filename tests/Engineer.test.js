@@ -8,7 +8,7 @@ describe("Engineer", () => {
             const email = "timmy@mail.com";
             const github = "timmy@github";
 
-            const result = new Engineer(id, name, email, github).getName();
+            const result = new Engineer(name, id, email, github).getName();
 
             expect(result).toEqual(name);
         })
@@ -20,7 +20,7 @@ describe("Engineer", () => {
             const email = "timmy@mail.com";
             const github = "timmy@github";
 
-            const result = new Engineer(id, name, email, github).getId();
+            const result = new Engineer(name, id, email, github).getId();
 
             expect(result).toEqual(id);
         })
@@ -32,7 +32,7 @@ describe("Engineer", () => {
             const email = "timmy@mail.com";
             const github = "timmy@github";
 
-            const result = new Engineer(id, name, email, github).getEmail();
+            const result = new Engineer(name, id, email, github).getEmail();
 
             expect(result).toEqual(email);
         })
@@ -44,7 +44,7 @@ describe("Engineer", () => {
             const email = "timmy@mail.com";
             const github = "timmy@github";
 
-            const result = new Engineer(id, name, email, github).getGithub();
+            const result = new Engineer(name, id, email, github).getGithub();
 
             expect(result).toEqual(github);
         })
@@ -57,7 +57,7 @@ describe("Engineer", () => {
             const github = "timmy@github";
             const role = "Engineer";
 
-            const result = new Engineer(id, name, email, github).getRole();
+            const result = new Engineer(name, id, email, github).getRole();
 
             expect(result).toEqual(role);
         })

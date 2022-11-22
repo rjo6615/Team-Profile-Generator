@@ -8,7 +8,7 @@ describe("Manager", () => {
             const email = "timmy@mail.com";
             const officeNumber = 1;
 
-            const result = new Manager(id, name, email, officeNumber).getName();
+            const result = new Manager(name, id, email, officeNumber).getName();
 
             expect(result).toEqual(name);
         })
@@ -20,7 +20,7 @@ describe("Manager", () => {
             const email = "timmy@mail.com";
             const officeNumber = 1;
 
-            const result = new Manager(id, name, email, officeNumber).getId();
+            const result = new Manager(name, id, email, officeNumber).getId();
 
             expect(result).toEqual(id);
         })
@@ -32,7 +32,7 @@ describe("Manager", () => {
             const email = "timmy@mail.com";
             const officeNumber = 1;
 
-            const result = new Manager(id, name, email, officeNumber).getEmail();
+            const result = new Manager(name, id, email, officeNumber).getEmail();
 
             expect(result).toEqual(email);
         })
@@ -44,7 +44,7 @@ describe("Manager", () => {
             const email = "timmy@mail.com";
             const officeNumber = 1;
 
-            const result = new Manager(id, name, email, officeNumber).getOfficeNumber();
+            const result = new Manager(name, id, email, officeNumber).getOfficeNumber();
 
             expect(result).toEqual(officeNumber);
         })
@@ -57,7 +57,7 @@ describe("Manager", () => {
             const officeNumber = 1;
             const role = "Manager";
 
-            const result = new Manager(id, name, email, officeNumber).getRole();
+            const result = new Manager(name, id, email, officeNumber).getRole();
 
             expect(result).toEqual(role);
         })

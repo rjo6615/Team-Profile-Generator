@@ -7,7 +7,7 @@ describe("Employee", () => {
             const name = "Timmy";
             const email = "timmy@mail.com";
 
-            const result = new Employee(id, name, email).getName();
+            const result = new Employee(name, id, email).getName();
 
             expect(result).toEqual(name);
         })
@@ -18,7 +18,7 @@ describe("Employee", () => {
             const name = "Timmy";
             const email = "timmy@mail.com";
 
-            const result = new Employee(id, name, email).getId();
+            const result = new Employee(name, id, email).getId();
 
             expect(result).toEqual(id);
         })
@@ -29,7 +29,7 @@ describe("Employee", () => {
             const name = "Timmy";
             const email = "timmy@mail.com";
 
-            const result = new Employee(id, name, email).getEmail();
+            const result = new Employee(name, id, email).getEmail();
 
             expect(result).toEqual(email);
         })
@@ -41,7 +41,7 @@ describe("Employee", () => {
             const email = "timmy@mail.com";
             const role = "Employee";
 
-            const result = new Employee(id, name, email).getRole();
+            const result = new Employee(name, id, email).getRole();
 
             expect(result).toEqual(role);
         })
